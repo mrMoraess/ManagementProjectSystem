@@ -4,6 +4,8 @@ const validator = require("validator")
 const validateBody = (req, res, next) => {
     const { body } = req
 
+    console.log(req.body + "  oi")
+
     if (validator.isEmpty(body.name) || body.name === undefined) {
         return res.status(400).json({"msg": "This name isn't valid."})
     } else if (!validator.isEmail(body.email) || body.email === undefined) {

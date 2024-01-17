@@ -17,8 +17,9 @@ function userExists(username) {
     })
 }
 
-const createNewUser = (req, res) => {
-    console.log("Funcionou")
+const createNewUser = (body) => {
+    console.log(body)
+    return body
 }
 
 function testConnect() {
@@ -26,9 +27,11 @@ function testConnect() {
     if (err) {
         return console.log(err)
     } 
-    return console.log(res[1].username)
+    return console.log(res[0].username)
 })}
 
 testConnect()
 
-module.exports = createNewUser
+module.exports = { 
+    createNewUser
+}
