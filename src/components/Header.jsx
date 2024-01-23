@@ -7,7 +7,8 @@ function Header () {
                     <a href="/">
                         <img src="../../public/vite.svg" alt="website logo" />
                     </a>
-                    <h1 className="text-4xl">My Website</h1>
+                    <h1 className="text-4xl">
+                        M.P.S.</h1>
                 </div>
                 {/* <div className="flex flex-col justify-center ali">
                     <nav>

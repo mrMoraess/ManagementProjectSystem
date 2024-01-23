@@ -33,19 +33,19 @@ function App() {
   //   }
   // })()
 
-  fetch("http://localhost:3000/userRegist", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({
-      name: "Matheus",
-      email: "matheusrodriguesde347@gmail.com",
-      password: "M3m3ntom0r1@"
-    })
-  }).then(
-    response => response.json()
-  ).then(data => { console.log(data) })
+  // fetch("http://localhost:3000/userRegist", {
+  //   method: "POST",
+  //   headers: {
+  //     "Content-Type": "application/json"
+  //   },
+  //   body: JSON.stringify({
+  //     username: "Schrodinger's cat",
+  //     email: "shrodingerCat@gmail.com",
+  //     password: "M3m3ntom0r1@"
+  //   })
+  // }).then(
+  //   response => response.json()
+  // ).then(data => { console.log(data) })
 
   return (
     <>
